@@ -20,10 +20,10 @@ class Triangle
       type = :scalene
     end
   end
-end 
   class TriangleError < StandardError
     # triangle error code
       def message
           "This is not a traingle, try again."
       end 
+    end 
 end
