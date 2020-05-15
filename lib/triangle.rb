@@ -12,9 +12,9 @@ class Triangle
        total = self.sides.reduce(:+)
     if self.sides.any?{ |side| side <= 0 || total - side <= side}
       raise TriangleError
-    elsif sides.uniq.length == 1
+    elsif self.sides.uniq.length == 1
       type = :equilateral
-    elsif sides.uniq.length == 2
+    elsif self.sides.uniq.length == 2
       type = :isosceles
     else
       type = :scalene
